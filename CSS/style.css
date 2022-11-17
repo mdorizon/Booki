@@ -470,11 +470,23 @@ footer {
     }
 
     .footerDiv {
-        padding: 2rem 2rem
+        padding: 2rem 2rem;
     }
 }
-/* téléphones portables */
-/*@media only screen and (max-width: 767px) {
 
-    
-}*/
+
+/* portables */
+@media screen and (min-width:320px) and (max-width:767px) {
+
+    body  {
+        background-color:red;
+    }
+    header {
+        flex-direction: column;
+    }
+
+    .headerImg {
+        width: 8%;
+    }   
+
+}
