@@ -603,4 +603,13 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    .searchInput {
+        width: 140px;
+    }
+    .cardsButton {
+        width: 100%;
+    }
+    .activityButton {
+        width: 100%;
+    }
 }
