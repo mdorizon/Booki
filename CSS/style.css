@@ -1,4 +1,9 @@
 /* general style start */
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0 3rem 0 3rem;
     font-family: 'Raleway', sans-serif;
@@ -58,7 +63,29 @@ section {
     text-align: center;
     text-decoration: none;
     color: #000;
+    transition-duration: 0.1s;
+    border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
 }
+.headerNavLink[data-active=true] {
+    color: #0065FC;
+}
+.headerNavLink:hover {
+  color: #0065FC;
+}
+
+@media screen and (min-width: 601px) {
+    .header {
+      grid-template-columns: auto 1fr auto auto;
+      grid-template-areas: "logo . navbar button";
+    }
+    .headerNavLink[data-active=true] {
+      border-top: 3px solid #0065FC;
+    }
+    .headerNavLink:hover {
+      border-top: 3px solid #0065FC;
+    }
+  }
 
 /* header style end */
 
@@ -478,12 +505,10 @@ footer {
 /* portables */
 @media screen and (max-width:767px) {
 
-    header {
-        flex-direction: column;
+    body {
+        margin: 0;
     }
 
-    .headerImg {
-        width: 8%;
-    }   
+    
 
 }
