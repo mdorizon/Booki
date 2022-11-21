@@ -367,7 +367,7 @@ footer {
 
 
 /* tablettes */
-@media only screen and (min-width : 768px) and (max-width: 991px) {
+@media screen and (min-width : 768px) and (max-width: 991px) {
 
     .filterDiv {
         margin: 0 1.5rem 1rem 0;
@@ -476,11 +476,8 @@ footer {
 
 
 /* portables */
-@media screen and (min-width:320px) and (max-width:767px) {
+@media screen and (max-width:767px) {
 
-    body  {
-        background-color:red;
-    }
     header {
         flex-direction: column;
     }
