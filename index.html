@@ -37,34 +37,38 @@
             <form class="searchForm">
                 <i class="fas fa-map-marker-alt searchIcon"></i>
                 <input type="text" placeholder="Marseille, France" class="searchInput">
-                <button class="searchButton">Rechercher</button>
+                <button class="searchButton"><p class="searchButtonText">Rechercher</p><i class="fa-solid fa-magnifying-glass searchButtonIcon"></i></button>
             </form>
             <div class="filters">
                 <h2>Filtres</h2>
                 <div class="filtersDiv">
-                    <div class="filterDiv">
-                        <a href="#" class="filterButton">
-                            <i class="fas fa-money-bill-wave filterIcon"></i>
-                            <span class="filterText">Économique</span>
-                        </a>
+                    <div class="firstFilters">
+                        <div class="filterDiv">
+                            <a href="#" class="filterButton">
+                                <i class="fas fa-money-bill-wave filterIcon"></i>
+                                <span class="filterText">Économique</span>
+                            </a>
+                        </div>
+                        <div class="filterDiv">
+                            <a href="#" class="filterButton">
+                                <i class="fas fa-child filterIcon"></i>
+                                <span class="filterText">Familial</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="filterDiv">
-                        <a href="#" class="filterButton">
-                            <i class="fas fa-child filterIcon"></i>
-                            <span class="filterText">Familial</span>
-                        </a>
-                    </div>
-                    <div class="filterDiv">
-                        <a href="#" class="filterButton">
-                            <i class="fas fa-heart filterIcon"></i>
-                            <span class="filterText">Romantique</span>
-                        </a>
-                    </div>
-                    <div class="filterDiv">
-                        <a href="#" class="filterButton">
-                            <i class="fas fa-dog filterIcon"></i>
-                            <span class="filterText">Animaux autorisés</span>
-                        </a>
+                    <div class="secondFilters">
+                        <div class="filterDiv">
+                            <a href="#" class="filterButton">
+                                <i class="fas fa-heart filterIcon"></i>
+                                <span class="filterText">Romantique</span>
+                            </a>
+                        </div>
+                        <div class="filterDiv">
+                            <a href="#" class="filterButton">
+                                <i class="fas fa-dog filterIcon"></i>
+                                <span class="filterText">Animaux autorisés</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,14 +89,16 @@
                         <figure class="hostingFigure">
                             <img class="HostingImage" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="card">
                             <figcaption class="hostFigcap">
-                                <h3 class="hostCardTitle">Auberge de la Canebière</h3>
-                                <p class="hostCardText">Nuit à partir de 25€</p>
                                 <div>
+                                    <h3 class="hostCardTitle">Auberge de la Canebière</h3>
+                                    <p class="hostCardText">Nuit à partir de 25€</p>
+                                </div>
+                                <div class="hostScore">
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
-                                    <i class="fas fa-star scoreIcon"></i>
+                                    <i class="fas fa-star scoreIconGrey"></i>
                                 </div>
                             </figcaption>
                         </figure>
@@ -103,12 +109,12 @@
                             <figcaption class="hostFigcap">
                                 <h3 class="hostCardTitle">Hôtel du port</h3>
                                 <p class="hostCardText">Nuit à partir de 52€</p>
-                                <div>
+                                <div class="hostScore">
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
-                                    <i class="fas fa-star scoreIcon"></i>
+                                    <i class="fas fa-star scoreIconGrey"></i>
                                 </div>
                             </figcaption>
                         </figure>
@@ -119,12 +125,12 @@
                             <figcaption class="hostFigcap">
                                 <h3 class="hostCardTitle">Hôtel Les mouettes</h3>
                                 <p class="hostCardText">Nuit à partir de 76€</p>
-                                <div>
+                                <div class="hostScore">
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
-                                    <i class="fas fa-star scoreIcon"></i>
+                                    <i class="fas fa-star scoreIconGrey"></i>
                                 </div>
                             </figcaption>
                         </figure>
@@ -135,12 +141,12 @@
                             <figcaption class="hostFigcap">
                                 <h3 class="hostCardTitle">Hôtel de la mer</h3>
                                 <p class="hostCardText">Nuit à partir de 46€</p>
-                                <div>
+                                <div class="hostScore">
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
-                                    <i class="fas fa-star scoreIcon"></i>
+                                    <i class="fas fa-star scoreIconGrey"></i>
                                 </div>
                             </figcaption>
                         </figure>
@@ -151,12 +157,12 @@
                             <figcaption class="hostFigcap">
                                 <h3 class="hostCardTitle">Auberge Le Panier</h3>
                                 <p class="hostCardText">Nuit à partir de 23€</p>
-                                <div>
+                                <div class="hostScore">
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
-                                    <i class="fas fa-star scoreIcon"></i>
+                                    <i class="fas fa-star scoreIconGrey"></i>
                                 </div>
                             </figcaption>
                         </figure>
@@ -167,12 +173,12 @@
                             <figcaption class="hostFigcap">
                                 <h3 class="hostCardTitle">Hôtel Chez Amina</h3>
                                 <p class="hostCardText">Nuit à partir de 96€</p>
-                                <div>
+                                <div class="hostScore">
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
-                                    <i class="fas fa-star scoreIcon"></i>
+                                    <i class="fas fa-star scoreIconGrey"></i>
                                 </div>
                             </figcaption>
                         </figure>
@@ -188,54 +194,54 @@
                 <div class="mostPopularCardsDiv">
                     <figure class="mostPopularFigure">
                         <a class="mostPopularContent">
-                            <div class="mostPopularImageDiv">
-                                <img class="mostPopularImage" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="card">
-                            </div>
+                            <img class="mostPopularImage" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="card">
                             <div class="mostPopularFigCaption">
-                                <h3 class="mostPopularCardTitle">Hôtel le soleil du matin</h3>
-                                <p class="mostPopularCardText">Nuit à partir de 128€</p>
+                                <div>
+                                    <h3 class="mostPopularCardTitle">Hôtel le soleil du matin</h3>
+                                    <p class="mostPopularCardText">Nuit à partir de 128€</p>
+                                </div>
                                 <div class="mostPopularClassmentDiv">
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
-                                    <i class="fas fa-star scoreIcon"></i>
+                                    <i class="fas fa-star scoreIconGrey"></i>
                                 </div>
                             </div>
                         </a>
                     </figure>
                     <figure class="mostPopularFigure middleCard">
                         <a class="mostPopularContent">
-                            <div class="mostPopularImageDiv">
-                                <img class="mostPopularImage" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="card">
-                            </div>
+                            <img class="mostPopularImage" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="card">
                             <div class="mostPopularFigCaption">
-                                <h3 class="mostPopularCardTitle">Chambres d'hôtes Au cœur de l'eau</h3>
-                                <p class="mostPopularCardText">Nuit à partir de 71€</p>
+                                <div>
+                                    <h3 class="mostPopularCardTitle">Chambres d'hôtes Au cœur de l'eau</h3>
+                                    <p class="mostPopularCardText">Nuit à partir de 71€</p>
+                                </div>
                                 <div class="mostPopularClassmentDiv">
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
-                                    <i class="fas fa-star scoreIcon"></i>
+                                    <i class="fas fa-star scoreIconGrey"></i>
                                 </div>
                             </div>
                         </a>
                     </figure>
                     <figure class="mostPopularFigure">
                         <a class="mostPopularContent">
-                            <div class="mostPopularImageDiv">
-                                <img class="mostPopularImage" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="card">
-                            </div>
+                            <img class="mostPopularImage" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="card">
                             <div class="mostPopularFigCaption">
-                                <h3 class="mostPopularCardTitle">Hôtel Bleu et Blanc</h3>
-                                <p class="mostPopularCardText">Nuit à partir de 68€</p>
+                                <div>
+                                    <h3 class="mostPopularCardTitle">Hôtel Bleu et Blanc</h3>
+                                    <p class="mostPopularCardText">Nuit à partir de 68€</p>
+                                </div>
                                 <div class="mostPopularClassmentDiv">
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
                                     <i class="fas fa-star scoreIcon"></i>
-                                    <i class="fas fa-star scoreIcon"></i>
+                                    <i class="fas fa-star scoreIconGrey"></i>
                                 </div>
                             </div>
                         </a>

@@ -28,6 +28,9 @@ h2 {
 .scoreIcon {
     color: #0065FC;
 }
+.scoreIconGrey {
+    color: #F2F2F2;
+}
 
 a {
     text-decoration: none;
@@ -46,6 +49,8 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo . navbar button";
 }
 
 .headerImg {
@@ -68,25 +73,13 @@ section {
     border-bottom: 3px transparent solid;
 }
 .headerNavLink[data-active=true] {
+    border-top: 3px solid #0065FC;
     color: #0065FC;
 }
 .headerNavLink:hover {
-  color: #0065FC;
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
 }
-
-@media screen and (min-width: 768px) {
-    .header {
-      grid-template-columns: auto 1fr auto auto;
-      grid-template-areas: "logo . navbar button";
-    }
-    .headerNavLink[data-active=true] {
-      border-top: 3px solid #0065FC;
-    }
-    .headerNavLink:hover {
-      border-top: 3px solid #0065FC;
-    }
-  }
-
 /* header style end */
 
 
@@ -137,6 +130,9 @@ section {
     padding: 0 1.5rem;
     font-size: 1rem;
     cursor: pointer;
+}
+.searchButtonIcon {
+    display: none;
 }
   
     /* filtres */
@@ -521,9 +517,10 @@ footer {
 }
 
 
-/* portables */
+/* version mobiles */
 @media screen and (max-width:767px) {
 
+    /* header */
     body {
         margin: 0;
     }
@@ -534,12 +531,13 @@ footer {
         width: 100%;
     }
     .headerImg {
-        width: 12%;
-        margin-top: 30px;
+        width: 61.09px;
+        margin-top: 21px;
         margin-bottom: 20px;
     }
     .headerNavLink {
         border-top: none;
+        font-weight: 500;
         border-bottom: 3px solid #F2F2F2;
         width: 50%;
     }
@@ -551,65 +549,229 @@ footer {
         border-bottom-color: #0065FC;
         border-top: none;
     }
+    /* !header */
+
+
+    /* filter */
     .firstSection, .activitySection {
-        margin: 0 30px;
+        margin: 0 20px;
+    }
+    .searchTitle {
+        margin: 31px 0 0 0;
+        font-size: 22px;
+    }
+    .searchSubtitle {
+        margin-top: 13px;
+        margin-bottom: 36px;
+    }
+    .searchButtonText {
+        display: none;
+    }
+    .searchInput {
+        font-size: 18px;
+    }
+    .searchButton {
+        width: 50px;
+        padding: 0;
+    }
+    .searchButtonIcon {
+        display: contents;
+    }
+    .filters h2 {
+        font-size: 18px;
+    }
+    .filters {
+        flex-direction: column;
+    }
+    .filterDiv {
+        width: 160px;
+        height: 50px;
+        margin-right: 14px;
+        margin-bottom: 17px;
+    }
+    .filterText {
+        font-size: 12px;
+        margin-left: 14px;
+    }
+    .filterIcon {
+        height: 0;
+        width: 0;
+        margin-left: 20px;
+    }
+    .filterButton {
+        justify-content: flex-start;
     }
     .filtersDiv {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
-    .hostingSection {
+    .firstFilters, .secondFilters {
         display: flex;
-        flex-direction: column-reverse;
     }
-    .hostingDiv {
-        border-radius: 0;
-        margin: 0;
+    .resultIcon {
+        min-width: 24px;
+        height: 24px;
+        margin-right: 11px;
     }
+    .resultText {
+        font-weight: 400;
+        margin-left: 0;
+    }
+    /* !filter */
+
+
+    /* most popular */
     .mostPopularDiv {
         border-radius: 0;
         margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 28px;
+        padding-bottom: 0;
+    }
+    .mostPopularDiv h2 {
+        font-size: 22px;
+        margin-bottom: 0;
     }
     .mostPopularCardsDiv {
         width: 100%;
+        margin: 26px 7px 47px 7px;
     }
     .mostPopularFigure {
-        height: 160px;
+        height: 144px;
+        margin-top: 0;
+        margin-bottom: 11px;
+    }
+    .mostPopularImage {
+        position: relative;
+        width: 137px;
+        height: 144px;
+    }
+    .mostPopularFigCaption {
+        margin: 0 0 0 20px;
+    }
+    .mostPopularCardText {
+        font-size: 14px;
+        margin-top: 7px;
+        margin-bottom: 0;
+    }
+    .mostPopularCardTitle {
+        margin: 11px 0 0 0;
+        font-size: 17px;
+    }
+    .mostPopularClassmentDiv {
+        margin-bottom: 7px;
+    }
+    .scoreIcon, .scoreIconGrey {
+        font-size: 12px;
+    }
+    /* !most popular */
+
+
+    /* hosting */
+    .hostingSection {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 0;
     }
     .hostingDiv {
+        border-radius: 0;
+        margin: 0;
         background-color: #FFF;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 26px;
+        padding-bottom: 65px;
+    }
+    .hostingDiv h2 {
+        font-size: 22px;
+        margin-bottom: 19px;
     }
     .hostingCards {
         flex-direction: column;
     }
     .hostingFigure {
-        width: 100%;
         margin: 0;
-        margin-top: 30px;
+        width: 96%;
+        margin-bottom: 12px;
+    }
+    .hostFigcap {
+        padding-bottom: 0;
+    }
+    .HostingImage {
+        height: 124px;
+    }
+    .hostCardTitle {
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 17px;
+    }
+    .hostCardText {
+        font-size: 14px;
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+    .hostScore {
+        margin-bottom: 5px;
     }
     .HostFinalTitle a {
-        color: #FFF;
-    }
-    .activityDiv {
-        flex-direction: column;
-    }
-    .activityFigure {
-        width: 100%;
-    }
-    .activityImage {
-        height: 20rem;
-    }
-    footer {
-        flex-direction: column;
-        align-items: center;
-    }
-    .searchInput {
-        width: 140px;
+        display: none;
     }
     .cardsButton {
         width: 100%;
     }
+    /* !hosting */
+    
+
+    /* activity */
+    .activitySection h2 {
+        font-size: 22px;
+        width: 210px;
+        margin-bottom: 5px;
+    }
     .activityButton {
         width: 100%;
+        height: 190px;
+        margin-bottom: 24px;
     }
+    .activityFigure {
+        width: 100%;
+        height: 190px;
+        margin: 0;
+    }
+    .activityImage {
+        height: 134px;
+    }
+    .activityDiv {
+        flex-direction: column;
+    }
+    .activityCardTitle {
+        font-size: 17px;
+    }
+    /* !activity */
+
+
+    /* footer */
+    footer {
+        flex-direction: column;
+        margin-top: 60px;
+        padding-top: 12px;
+        padding-bottom: 49px;
+    }
+    .footerDiv {
+        margin-top: 28px;
+        margin-left: 30px;
+        padding: 0;
+        width: 100%;
+    }
+    .footerTitle {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .footerLink {
+        margin: 0;
+        margin-bottom: 12px;
+    }
+    /* !footer */
 }
