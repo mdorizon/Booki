@@ -744,6 +744,7 @@ footer {
         padding-right: 20px;
         padding-top: 26px;
         padding-bottom: 65px;
+        width: auto;
     }
     .hostingDiv h2 {
         font-size: 22px;
@@ -754,7 +755,7 @@ footer {
     }
     .hostingFigure {
         margin: 0;
-        width: 74%;
+        width: 100%;
         margin-bottom: 12px;
         height: 215px;
     }
@@ -782,8 +783,10 @@ footer {
     }
     .cardsButton {
         height: 215px;
-        min-width: 280px;
         max-width: 370px;
+        margin: auto;
+        margin-bottom: 34px;
+        width: 100%;
     }
     /* !hosting */
     
