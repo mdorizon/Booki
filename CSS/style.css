@@ -198,7 +198,7 @@ section {
 .hostingCards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 .hostingFigure {
     background-color: white;
@@ -208,12 +208,15 @@ section {
     margin-bottom: 30px;
     box-shadow: 0 0 20px #0000002e;
     height: 199px;
-    width: 246px;
+    width: 100%;
 }
 .cardsButton {
     height: 199px;
-    width: 246px;
+    width: 40%;
+    max-width: 246px;
+    min-width: 215px;
     margin-bottom: 30px;
+    margin-right: 19px;
 }
 .hostFigcap {
     padding: 0 0 0.8rem 0.8rem;
@@ -222,7 +225,7 @@ section {
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
     height: 124px;
-    width: 246px;
+    width: 100%;
 }
 .hostCardTitle {
     margin-top: 4px;
@@ -335,7 +338,7 @@ section {
     box-shadow: 0 0 20px #0000002e;
 } 
 .activityButton {
-    width: 302px;
+    width: 23%;
     height: 444px;
 }
 .activityFigCaption {
@@ -381,6 +384,7 @@ footer {
     body {
         padding: 0 72px;
         margin: 0;
+        min-width: 772px;
     }
     .headerNavLink {
         font-weight: 400;
@@ -434,6 +438,7 @@ footer {
     }
     .hostingFigure {
         margin-right: 0.5rem;
+        height: 210px;
     }
     .hostFigcap {
         padding: 0 0 0.8rem 0.2rem;
@@ -453,10 +458,17 @@ footer {
     }
     .hostingDiv {
         margin-bottom: 53px;
+        width: 90%;
+        max-width: 770px;
     }
     .hostScore {
         margin: 0;
         margin-top: 9px;
+    }
+    .cardsButton {
+        max-width: 230px;
+        width: 30%;
+        min-width: 212px;
     }
     /* !hosting */
 
@@ -528,7 +540,7 @@ footer {
 
     /* activity */
     .activitySection {
-        margin-top: 70px;
+        margin-bottom: 0;
     }
     .activitySection h2 {
         font-size: 22px;
@@ -536,6 +548,7 @@ footer {
     }
     .activityFigure {
         margin: 1.5rem 50px 1.5rem 0;
+        height: 68%;
     }
     .activityImage {
         height: 211px;
