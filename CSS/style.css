@@ -794,8 +794,7 @@ footer {
     /* activity */
     .activitySection h2 {
         font-size: 22px;
-        width: 210px;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
     .activityButton {
         width: 100%;
@@ -823,11 +822,11 @@ footer {
 
     /* footer */
     footer {
-        flex-wrap: wrap;
         justify-content: flex-start;
         margin-top: 60px;
         padding-top: 12px;
         padding-bottom: 49px;
+        flex-direction: column;
     }
     .footerDiv {
         margin-top: 28px;
