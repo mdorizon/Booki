@@ -65,6 +65,7 @@ section {
     border-top: 3px transparent solid;
     border-bottom: 3px transparent solid;
 }
+
 .headerNavLink[data-active=true] {
     border-top: 3px solid #0065FC;
     color: #0065FC;
@@ -190,7 +191,7 @@ section {
     padding: 0 40px;
     background-color: #F2F2F2;
     border-radius: 2rem;
-    width: 900px;
+    width: 60%;
 }
 .hostingDiv h2 {
     margin: 42px 2rem 1rem 0;
@@ -198,7 +199,7 @@ section {
 .hostingCards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 .hostingFigure {
     background-color: white;
@@ -207,16 +208,13 @@ section {
     margin: 0;
     margin-bottom: 30px;
     box-shadow: 0 0 20px #0000002e;
-    height: 199px;
+    height: 100%;
     width: 100%;
 }
 .cardsButton {
-    height: 199px;
-    width: 40%;
-    max-width: 246px;
-    min-width: 215px;
+    height: 210px;
+    width: 30%;
     margin-bottom: 30px;
-    margin-right: 19px;
 }
 .hostFigcap {
     padding: 0 0 0.8rem 0.8rem;
@@ -251,19 +249,20 @@ section {
     margin: 0 0 1rem 0;
 }
 .mostPopularDiv {
-    padding: 40px;
-    margin-left: 40px;
+    padding: 30px;
+    margin-left: 25px;
     background-color: #F2F2F2;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 26%;
 }
 .mostPopularCardsDiv {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 343px;
+    width: 100%;
 }
 .mostPopularClassmentDiv {
     margin: 0 0 0.4rem 0;
@@ -272,11 +271,11 @@ section {
     flex: 1;
 }
 .mostPopularCardTitle {
-    margin: 16px 0 0 0;
-    font-size: 17px;
+    margin: 10px 0 0 0;
+    font-size: 16px;
 }
 .mostPopularFigCaption {
-    margin: 0 0 0 156px;
+    margin: 0 0 0 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -305,13 +304,13 @@ section {
 }
 .mostPopularImage {
     border-radius: 1rem 0 0 1rem;
-    position: absolute;
     object-fit: cover;
-    width: 137px;
-    height: 144px;
+    width: 37%;
 }
 .mostPopularCardText {
-    margin-top: 7px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 /* !most popular */
 
@@ -376,7 +375,6 @@ footer {
     margin: 0.4rem 0;
 }
 /* !footer */
-
 
 /* version tablettes */
 @media screen and (min-width : 768px) and (max-width: 991px) {
@@ -487,6 +485,7 @@ footer {
         padding-left: 40px;
         padding-right: 40px;
         padding-bottom: 48px;
+        width: 90%;
     }
     .mostPopularCardsDiv {
         display: flex;
@@ -496,14 +495,14 @@ footer {
     .mostPopularFigure {
         margin: 0;
         height: 144px;
-        width: 252px;
+        width: 30%;
     }
     .mostPopularImage {
         width: 106px;
         height: 144px;
     }
     .mostPopularFigCaption {
-        margin-left: 116px;
+        margin-left: 5px;
     }
     .middleCard {
         margin: 0 23px;
@@ -689,6 +688,7 @@ footer {
         padding-right: 20px;
         padding-top: 28px;
         padding-bottom: 0;
+        width: auto;
     }
     .mostPopularDiv h2 {
         font-size: 22px;
