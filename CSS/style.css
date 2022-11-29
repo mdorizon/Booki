@@ -382,7 +382,6 @@ footer {
     body {
         padding: 0 72px;
         margin: 0;
-        min-width: 772px;
     }
     .headerNavLink {
         font-weight: 400;
@@ -404,6 +403,10 @@ footer {
     }
     .searchForm {
         margin-top: 20px;
+    }
+    .filtersDiv {
+        display: flex;
+        flex-wrap: wrap;
     }
     .firstFilters, .secondFilters {
         display: flex;
@@ -466,7 +469,6 @@ footer {
     .cardsButton {
         max-width: 230px;
         width: 30%;
-        min-width: 212px;
     }
     /* !hosting */
 
@@ -494,12 +496,12 @@ footer {
     }
     .mostPopularFigure {
         margin: 0;
-        height: 144px;
+        height: 130px;
         width: 30%;
     }
     .mostPopularImage {
-        width: 106px;
-        height: 144px;
+        width: 40%;
+        height: 130px;
     }
     .mostPopularFigCaption {
         margin-left: 5px;
@@ -508,12 +510,14 @@ footer {
         margin: 0 23px;
     }
     .mostPopularCardTitle {
-        margin-top: 8px;
+        margin-top: 5px;
         font-weight: 700;
         font-size: 14px;
     }
     .middleCardTitle {
-        font-size: 16px;
+        margin-top: 5px;
+        font-weight: 700;
+        font-size: 14px;
     }
     .mostPopularCardText {
         font-size: 13px;
